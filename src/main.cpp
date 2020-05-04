@@ -7,9 +7,35 @@ using namespace pangolin;
 #include <string>
 #include "TriFace.h"
 #include <iostream>
-// TODO delete pakeges below
 
 // TODO convert C style code to CPP and make it easier to output vertices to be in or out to config file.
+
+void CorrectTextureCoordiante(DE::CSphericTriangles& sphere, const DE::TriFace& face){
+    float& m0 = sphere.pts[face.vertid[0]].m;
+    float& m1 = sphere.pts[face.vertid[1]].m;
+    float& m2 = sphere.pts[face.vertid[2]].m;
+    if ((m0 - m1) * (m0 - m1) + (m0 - m2) * (m0 - m2) + (m1 - m2) * (m1 - m2) > 1.5)
+    {
+        if (m0 - 0.0 < 0.2){
+            if (m1 - 0.0 < 0.2){
+                if (m2 - 1.0 < 0.2){ m2 -= 1.0; }
+            }
+            else if (m1 - 1.0 < 0.2){
+                if (m2 - 0.0 < 0.2){ m1 -= 1.0; }
+                else if (m2 - 1 < 0.2) { m0 += 1.0; }
+            }
+        }
+        else if (m0 - 1.0 < 0.2){
+            if (m1 - 0.0 < 0.2){
+                if (m2 - 0.0 < 0.2) { m0 -= 1.0;}
+                else if (m2 - 1.0 < 0.2) { m1 += 1.0;}
+            }
+            else if (m1 - 1.0 < 0.2){
+                if (m2 - 0.0 < 0.2) { m2 += 1.0;}
+            }
+        }
+    }
+}
 void DrawSphere(DE::CSphericTriangles& sphere)
 {
     // paint the surface with default color.
@@ -18,43 +44,7 @@ void DrawSphere(DE::CSphericTriangles& sphere)
 		DE::TriFace& face=(*(sphere.pFaces))[i];
         // glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
 		glBegin(GL_TRIANGLES); 
-        if((sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[1]].m)*(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[1]].m)
-			+(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[2]].m)*(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[2]].m)
-			+(sphere.pts[face.vertid[1]].m-sphere.pts[face.vertid[2]].m)*(sphere.pts[face.vertid[1]].m-sphere.pts[face.vertid[2]].m)>1.5)
-		{	
-			//printf("m1:%.5f\t",sphere.pts[face.vertid[0]].m);printf("m2:%.5f\t",sphere.pts[face.vertid[1]].m);printf("m3:%.5f\n",sphere.pts[face.vertid[2]].m);
-			if((abs(sphere.pts[face.vertid[0]].m)-0)<0.2) 
-				{
-					if((abs(sphere.pts[face.vertid[1]].m)-0)<0.2)
-					{
-						if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
-						{sphere.pts[face.vertid[2]].m-=1;}
-					}
-					else if((abs(sphere.pts[face.vertid[1]].m)-1)<0.2)
-					{
-						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
-						{sphere.pts[face.vertid[1]].m-=1;}
-						else if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
-						{sphere.pts[face.vertid[0]].m+=1;}
-					}
-				}
-			else if((abs(sphere.pts[face.vertid[0]].m)-1)<0.2) 
-				{
-					if((abs(sphere.pts[face.vertid[1]].m)-0)<0.2)
-					{
-						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
-						{sphere.pts[face.vertid[0]].m-=1;}
-						else if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
-						{sphere.pts[face.vertid[1]].m+=1;}
-					}
-					else if((abs(sphere.pts[face.vertid[1]].m)-1)<0.2)
-					{
-						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
-						{sphere.pts[face.vertid[2]].m+=1;}
-					}
-				}
-				//printf("m1:%.5f\t",sphere.pts[face.vertid[0]].m);printf("m2:%.5f\t",sphere.pts[face.vertid[1]].m);printf("m3:%.5f\n\n",sphere.pts[face.vertid[2]].m);
-		}
+        CorrectTextureCoordiante(sphere, face);
         glTexCoord2f(sphere.pts[face.vertid[0]].m,sphere.pts[face.vertid[0]].n);// bind texture coordinates
 		glVertex3f(sphere.pts[face.vertid[0]].x,sphere.pts[face.vertid[0]].y,sphere.pts[face.vertid[0]].z);
         glTexCoord2f(sphere.pts[face.vertid[1]].m,sphere.pts[face.vertid[1]].n);// bind texture coordinates
@@ -79,6 +69,7 @@ void DrawSphere(DE::CSphericTriangles& sphere)
 	// }
 	
 }
+
 void BindCVMat2GLTexture(cv::Mat& image, GLuint& imageTexture)
 {
     if(image.empty()){

@@ -27,6 +27,8 @@ OpenCV
 5. Extend some type specific function to be template function, to handle various depth images
 6. extract a parent calss for both DEMModel and TextureModel.
 7. automatic load of different GeoTiFF images (Generallization)
+8. turn to opengl core-profile mode, not immediate mode. 
+
 ## Future Work
 * reduce CPU Usage.
 * pyrimid model()
