@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Sub_Ubuntu/Digital_Earth
+CMAKE_SOURCE_DIR = /mnt/d/Sub_Ubuntu/Oriental_EYE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/Sub_Ubuntu/Digital_Earth/build
+CMAKE_BINARY_DIR = /mnt/d/Sub_Ubuntu/Oriental_EYE/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MainFunc.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/MainFunc.dir/flags.make
 
 CMakeFiles/MainFunc.dir/src/main.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MainFunc.dir/src/main.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/main.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MainFunc.dir/src/main.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/main.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/main.cpp
 
 CMakeFiles/MainFunc.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/main.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/main.cpp > CMakeFiles/MainFunc.dir/src/main.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/main.cpp > CMakeFiles/MainFunc.dir/src/main.cpp.i
 
 CMakeFiles/MainFunc.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/main.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/main.cpp -o CMakeFiles/MainFunc.dir/src/main.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/main.cpp -o CMakeFiles/MainFunc.dir/src/main.cpp.s
 
 CMakeFiles/MainFunc.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/MainFunc.dir/src/main.cpp.o.provides.build: CMakeFiles/MainFunc.dir/s
 
 CMakeFiles/MainFunc.dir/src/Triface.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/Triface.cpp.o: ../src/Triface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MainFunc.dir/src/Triface.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/Triface.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/Triface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MainFunc.dir/src/Triface.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/Triface.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/Triface.cpp
 
 CMakeFiles/MainFunc.dir/src/Triface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/Triface.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/Triface.cpp > CMakeFiles/MainFunc.dir/src/Triface.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/Triface.cpp > CMakeFiles/MainFunc.dir/src/Triface.cpp.i
 
 CMakeFiles/MainFunc.dir/src/Triface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/Triface.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/Triface.cpp -o CMakeFiles/MainFunc.dir/src/Triface.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/Triface.cpp -o CMakeFiles/MainFunc.dir/src/Triface.cpp.s
 
 CMakeFiles/MainFunc.dir/src/Triface.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/MainFunc.dir/src/Triface.cpp.o.provides.build: CMakeFiles/MainFunc.di
 
 CMakeFiles/MainFunc.dir/src/DataIO.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/DataIO.cpp.o: ../src/DataIO.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MainFunc.dir/src/DataIO.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/DataIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MainFunc.dir/src/DataIO.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/DataIO.cpp
 
 CMakeFiles/MainFunc.dir/src/DataIO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/DataIO.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/DataIO.cpp > CMakeFiles/MainFunc.dir/src/DataIO.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/DataIO.cpp > CMakeFiles/MainFunc.dir/src/DataIO.cpp.i
 
 CMakeFiles/MainFunc.dir/src/DataIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/DataIO.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/DataIO.cpp -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/DataIO.cpp -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.s
 
 CMakeFiles/MainFunc.dir/src/DataIO.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/MainFunc.dir/src/DataIO.cpp.o.provides.build: CMakeFiles/MainFunc.dir
 
 CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o: ../src/ElevationAndTexture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/ElevationAndTexture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/ElevationAndTexture.cpp
 
 CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/ElevationAndTexture.cpp > CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/ElevationAndTexture.cpp > CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.i
 
 CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/ElevationAndTexture.cpp -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/ElevationAndTexture.cpp -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.s
 
 CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/MainFunc.dir/utils/utils.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/utils/utils.cpp.o: ../utils/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MainFunc.dir/utils/utils.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/utils/utils.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MainFunc.dir/utils/utils.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/utils/utils.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/utils/utils.cpp
 
 CMakeFiles/MainFunc.dir/utils/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/utils/utils.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp > CMakeFiles/MainFunc.dir/utils/utils.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/utils/utils.cpp > CMakeFiles/MainFunc.dir/utils/utils.cpp.i
 
 CMakeFiles/MainFunc.dir/utils/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/utils/utils.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp -o CMakeFiles/MainFunc.dir/utils/utils.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/utils/utils.cpp -o CMakeFiles/MainFunc.dir/utils/utils.cpp.s
 
 CMakeFiles/MainFunc.dir/utils/utils.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/MainFunc.dir/utils/utils.cpp.o.provides.build: CMakeFiles/MainFunc.di
 
 CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o: ../src/gdal2cv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/gdal2cv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/gdal2cv.cpp
 
 CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/gdal2cv.cpp > CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/gdal2cv.cpp > CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.i
 
 CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/gdal2cv.cpp -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/gdal2cv.cpp -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.s
 
 CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o.provides.build: CMakeFiles/MainFunc.di
 
 CMakeFiles/MainFunc.dir/src/extra.cpp.o: CMakeFiles/MainFunc.dir/flags.make
 CMakeFiles/MainFunc.dir/src/extra.cpp.o: ../src/extra.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MainFunc.dir/src/extra.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/extra.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/extra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MainFunc.dir/src/extra.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MainFunc.dir/src/extra.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/extra.cpp
 
 CMakeFiles/MainFunc.dir/src/extra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainFunc.dir/src/extra.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Digital_Earth/src/extra.cpp > CMakeFiles/MainFunc.dir/src/extra.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Sub_Ubuntu/Oriental_EYE/src/extra.cpp > CMakeFiles/MainFunc.dir/src/extra.cpp.i
 
 CMakeFiles/MainFunc.dir/src/extra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainFunc.dir/src/extra.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Digital_Earth/src/extra.cpp -o CMakeFiles/MainFunc.dir/src/extra.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Sub_Ubuntu/Oriental_EYE/src/extra.cpp -o CMakeFiles/MainFunc.dir/src/extra.cpp.s
 
 CMakeFiles/MainFunc.dir/src/extra.cpp.o.requires:
 
@@ -319,7 +319,7 @@ MainFunc: /usr/local/lib/libopencv_photo.so.3.4.10
 MainFunc: /usr/local/lib/libopencv_imgproc.so.3.4.10
 MainFunc: /usr/local/lib/libopencv_core.so.3.4.10
 MainFunc: CMakeFiles/MainFunc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MainFunc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MainFunc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MainFunc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -342,6 +342,6 @@ CMakeFiles/MainFunc.dir/clean:
 .PHONY : CMakeFiles/MainFunc.dir/clean
 
 CMakeFiles/MainFunc.dir/depend:
-	cd /mnt/d/Sub_Ubuntu/Digital_Earth/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/Sub_Ubuntu/Digital_Earth /mnt/d/Sub_Ubuntu/Digital_Earth /mnt/d/Sub_Ubuntu/Digital_Earth/build /mnt/d/Sub_Ubuntu/Digital_Earth/build /mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles/MainFunc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/d/Sub_Ubuntu/Oriental_EYE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/Sub_Ubuntu/Oriental_EYE /mnt/d/Sub_Ubuntu/Oriental_EYE /mnt/d/Sub_Ubuntu/Oriental_EYE/build /mnt/d/Sub_Ubuntu/Oriental_EYE/build /mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles/MainFunc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MainFunc.dir/depend
 

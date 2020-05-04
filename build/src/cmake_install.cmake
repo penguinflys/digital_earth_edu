@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Sub_Ubuntu/Digital_Earth/src
+# Install script for directory: /mnt/d/Sub_Ubuntu/Oriental_EYE/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

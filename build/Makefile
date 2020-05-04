@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Sub_Ubuntu/Digital_Earth
+CMAKE_SOURCE_DIR = /mnt/d/Sub_Ubuntu/Oriental_EYE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/Sub_Ubuntu/Digital_Earth/build
+CMAKE_BINARY_DIR = /mnt/d/Sub_Ubuntu/Oriental_EYE/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles /mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles /mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Sub_Ubuntu/Oriental_EYE/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

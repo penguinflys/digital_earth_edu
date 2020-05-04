@@ -1,37 +1,37 @@
 [
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/main.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/main.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/main.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/main.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/main.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/main.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/Triface.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/Triface.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/Triface.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/Triface.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/Triface.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/Triface.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/DataIO.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/DataIO.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/DataIO.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/DataIO.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/DataIO.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/ElevationAndTexture.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/ElevationAndTexture.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/ElevationAndTexture.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/ElevationAndTexture.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/utils/utils.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/utils/utils.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/utils/utils.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/utils/utils.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/gdal2cv.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/gdal2cv.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/gdal2cv.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/gdal2cv.cpp"
 },
 {
-  "directory": "/mnt/d/Sub_Ubuntu/Digital_Earth/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/extra.cpp.o -c /mnt/d/Sub_Ubuntu/Digital_Earth/src/extra.cpp",
-  "file": "/mnt/d/Sub_Ubuntu/Digital_Earth/src/extra.cpp"
+  "directory": "/mnt/d/Sub_Ubuntu/Oriental_EYE/build",
+  "command": "/usr/bin/g++-7   -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv  -std=c++14 -O0 -Wall -g -ggdb   -o CMakeFiles/MainFunc.dir/src/extra.cpp.o -c /mnt/d/Sub_Ubuntu/Oriental_EYE/src/extra.cpp",
+  "file": "/mnt/d/Sub_Ubuntu/Oriental_EYE/src/extra.cpp"
 }
 ]

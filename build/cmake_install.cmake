@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Sub_Ubuntu/Digital_Earth
+# Install script for directory: /mnt/d/Sub_Ubuntu/Oriental_EYE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/d/Sub_Ubuntu/Digital_Earth/build/src/cmake_install.cmake")
-  include("/mnt/d/Sub_Ubuntu/Digital_Earth/build/utils/cmake_install.cmake")
+  include("/mnt/d/Sub_Ubuntu/Oriental_EYE/build/src/cmake_install.cmake")
+  include("/mnt/d/Sub_Ubuntu/Oriental_EYE/build/utils/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Sub_Ubuntu/Digital_Earth/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/Sub_Ubuntu/Oriental_EYE/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

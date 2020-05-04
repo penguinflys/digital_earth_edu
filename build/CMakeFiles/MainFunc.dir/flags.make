@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++14 -O0 -Wall -g -ggdb
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Digital_Earth/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Digital_Earth/utils -I/mnt/d/Sub_Ubuntu/Digital_Earth/src -I/mnt/d/Sub_Ubuntu/Digital_Earth/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -I/mnt/d/Sub_Ubuntu/Oriental_EYE/include -I/usr/include/gdal -I/mnt/d/Sub_Ubuntu/Oriental_EYE/utils -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src -I/mnt/d/Sub_Ubuntu/Oriental_EYE/src/includes -isystem /usr/local/include -isystem /usr/local/include/opencv 
 
