@@ -42,4 +42,4 @@ Convension Command:
 gdal_translate -a_srs WGS84 -a_ullr -180 +90 +180 -90 xglobe-2400.jpg xglobe-2400.tiff
 ```
 
-![Alt text](others/SnippingCapture.PNG?raw=true "Renderings")
+![Rendering Image](others/SnippingCapture.PNG?raw=true "Renderings")
