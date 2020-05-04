@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/ElevationAndTexture.cpp.o CMakeFiles/src.dir/Image.cpp.o CMakeFiles/src.dir/TriFace.cpp.o CMakeFiles/src.dir/main.cpp.o
-/usr/bin/ranlib libsrc.a
