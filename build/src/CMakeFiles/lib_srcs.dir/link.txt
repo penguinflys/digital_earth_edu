@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_srcs.a  CMakeFiles/lib_srcs.dir/Triface.cpp.o CMakeFiles/lib_srcs.dir/DataIO.cpp.o CMakeFiles/lib_srcs.dir/ElevationAndTexture.cpp.o CMakeFiles/lib_srcs.dir/utils.cpp.o
+/usr/bin/ranlib liblib_srcs.a

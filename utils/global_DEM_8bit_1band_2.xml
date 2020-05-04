@@ -1,0 +1,21 @@
+<GDAL_WMS>
+	<Service name="WMS">
+		<ServerUrl>http://localhost:8080/geoserver/Yuan_Jie/wms?</ServerUrl>
+		<SRS>EPSG:4326</SRS>
+		<Layers>Yuan_Jie:global_DEM_8bit_1band_2</Layers>
+		<styles></styles>
+	</Service>
+	<DataWindow>
+		<UpperLeftX>0.0</UpperLeftX>
+		<UpperLeftY>89.9998779</UpperLeftY>
+		<LowerRightX>360.8331889999998</LowerRightX>
+		<LowerRightY>-90.833</LowerRightY>
+		<SizeX>433</SizeX>
+		<SizeY>217</SizeY>
+	</DataWindow>
+	<Projection>EPSG:4326</Projection>
+	<BandsCount>1</BandsCount>
+	<DataType>Byte</DataType>
+	<BlockSizeX>433</BlockSizeX>
+	<BlockSizeY>18</BlockSizeY>
+</GDAL_WMS>

@@ -1,0 +1,7 @@
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles/MainFunc.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/CMakeFiles/edit_cache.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/src/CMakeFiles/rebuild_cache.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/src/CMakeFiles/edit_cache.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/utils/CMakeFiles/rebuild_cache.dir
+/mnt/d/Sub_Ubuntu/Digital_Earth/build/utils/CMakeFiles/edit_cache.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.cpp
+utils.h
+/mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.h
+math.h
+-
+TriFace.h
+/mnt/d/Sub_Ubuntu/Digital_Earth/utils/TriFace.h
+
+/mnt/d/Sub_Ubuntu/Digital_Earth/utils/utils.h
+TriFace.h
+/mnt/d/Sub_Ubuntu/Digital_Earth/utils/TriFace.h
+
