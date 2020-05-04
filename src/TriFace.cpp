@@ -16,6 +16,11 @@ CVect8D& CVect8D::operator = (const CVect8D& vect)
 	x=vect.x;
 	y=vect.y;
 	z=vect.z;
+	b=vect.b;
+	l=vect.l;
+	h=vect.h;
+	m=vect.m;
+	n=vect.n;
 	return *this;
 }
 
@@ -25,6 +30,24 @@ CVect8D operator + (const CVect8D& vect1,const CVect8D& vect2)
 	vec.x=vect1.x+vect2.x;
 	vec.y=vect1.y+vect2.y;
 	vec.z=vect1.z+vect2.z;
+	vec.b=vect1.b+vect2.b;
+	vec.l=vect1.l+vect2.l;
+	vec.h=vect1.h+vect2.h;
+	vec.m=vect1.m+vect2.m;
+	vec.n=vect1.n+vect2.n;
+	return vec;
+}
+CVect8D operator - (const CVect8D& vect1,const CVect8D& vect2)
+{
+	CVect8D vec;
+	vec.x=vect1.x-vect2.x;
+	vec.y=vect1.y-vect2.y;
+	vec.z=vect1.z-vect2.z;
+	vec.b=vect1.b-vect2.b;
+	vec.l=vect1.l-vect2.l;
+	vec.h=vect1.h-vect2.h;
+	vec.m=vect1.m-vect2.m;
+	vec.n=vect1.n-vect2.n;
 	return vec;
 }
 CVect8D operator / (const CVect8D& vect1,float val)

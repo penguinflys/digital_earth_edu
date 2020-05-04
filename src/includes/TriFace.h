@@ -18,6 +18,7 @@ public:
 public:
 	double getNormal();
 	CVect8D& operator = (const CVect8D& vect);
+	
 	//CVect3D& operator /= (float val);
 	friend void XYZ2BLH(const CVect8D& vec);
 	friend void BLH2XYZ(const CSphericTriangles& sphere, const CVect8D& vec);
@@ -51,8 +52,10 @@ public:
 	int level;
 };
 CVect8D operator + (const CVect8D& vect1,const CVect8D& vect2);
+CVect8D operator - (const CVect8D& vect1,const CVect8D& vect2);
 CVect8D operator /(const CVect8D& vect1,float val);
 CVect8D operator *(const CVect8D& vect1,float val);
+
 ostream& operator << (ostream &out, const CVect8D& vect);
 double distance( CVect8D vect1, CVect8D vect2);
 
@@ -88,6 +91,13 @@ public:
 	void SetMN(CVect8D& vec, TextureModel* tex);
 	void SetBLH(CVect8D& vec);
 	void SetXYZ(CVect8D& vec);
+	// void CorrectMN(const TriFace& face){
+	// 	// Drifting effect of texture Coordinates
+	// 	std::vector<double> ns {pts[face.vertid[0]].n, pts[face.vertid[1]].n, pts[face.vertid[2]].n};
+	// 	std::sort(ns.begin(),ns.end());
+		
+
+	// };
 };
 
 } //namespace

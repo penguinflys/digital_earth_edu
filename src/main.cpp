@@ -7,7 +7,6 @@ using namespace pangolin;
 #include <string>
 #include "TriFace.h"
 #include <iostream>
-#include "stb_image.h"
 // TODO delete pakeges below
 
 // TODO convert C style code to CPP and make it easier to output vertices to be in or out to config file.
@@ -17,12 +16,45 @@ void DrawSphere(DE::CSphericTriangles& sphere)
 	for (uint16_t i = 0; i < (*(sphere.pFaces)).size(); i++) {/* color information here */ 
 		DE::CVect8D normalvector;
 		DE::TriFace& face=(*(sphere.pFaces))[i];
-		sphere.getNormalVector(face,normalvector);
-
-        // glEnable(GL_TEXTURE_2D);
+        // glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
 		glBegin(GL_TRIANGLES); 
-        // glColor4f(1.0f,1.0f,1.0f,0.2f);
-		// glNormal3f(normalvector.x,normalvector.y,normalvector.z);
+        if((sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[1]].m)*(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[1]].m)
+			+(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[2]].m)*(sphere.pts[face.vertid[0]].m-sphere.pts[face.vertid[2]].m)
+			+(sphere.pts[face.vertid[1]].m-sphere.pts[face.vertid[2]].m)*(sphere.pts[face.vertid[1]].m-sphere.pts[face.vertid[2]].m)>1.5)
+		{	
+			//printf("m1:%.5f\t",sphere.pts[face.vertid[0]].m);printf("m2:%.5f\t",sphere.pts[face.vertid[1]].m);printf("m3:%.5f\n",sphere.pts[face.vertid[2]].m);
+			if((abs(sphere.pts[face.vertid[0]].m)-0)<0.2) 
+				{
+					if((abs(sphere.pts[face.vertid[1]].m)-0)<0.2)
+					{
+						if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
+						{sphere.pts[face.vertid[2]].m-=1;}
+					}
+					else if((abs(sphere.pts[face.vertid[1]].m)-1)<0.2)
+					{
+						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
+						{sphere.pts[face.vertid[1]].m-=1;}
+						else if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
+						{sphere.pts[face.vertid[0]].m+=1;}
+					}
+				}
+			else if((abs(sphere.pts[face.vertid[0]].m)-1)<0.2) 
+				{
+					if((abs(sphere.pts[face.vertid[1]].m)-0)<0.2)
+					{
+						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
+						{sphere.pts[face.vertid[0]].m-=1;}
+						else if((abs(sphere.pts[face.vertid[2]].m)-1)<0.2)
+						{sphere.pts[face.vertid[1]].m+=1;}
+					}
+					else if((abs(sphere.pts[face.vertid[1]].m)-1)<0.2)
+					{
+						if((abs(sphere.pts[face.vertid[2]].m)-0)<0.2)
+						{sphere.pts[face.vertid[2]].m+=1;}
+					}
+				}
+				//printf("m1:%.5f\t",sphere.pts[face.vertid[0]].m);printf("m2:%.5f\t",sphere.pts[face.vertid[1]].m);printf("m3:%.5f\n\n",sphere.pts[face.vertid[2]].m);
+		}
         glTexCoord2f(sphere.pts[face.vertid[0]].m,sphere.pts[face.vertid[0]].n);// bind texture coordinates
 		glVertex3f(sphere.pts[face.vertid[0]].x,sphere.pts[face.vertid[0]].y,sphere.pts[face.vertid[0]].z);
         glTexCoord2f(sphere.pts[face.vertid[1]].m,sphere.pts[face.vertid[1]].n);// bind texture coordinates
@@ -34,6 +66,7 @@ void DrawSphere(DE::CSphericTriangles& sphere)
 	}
 
     // paint lines to be red.
+
 	// for (uint16_t i = 0; i < (*(sphere.pFaces)).size(); i++) {/* color information here */ 
 	// 	DE::TriFace& face=(*(sphere.pFaces))[i];
     //     glBegin(GL_LINE_LOOP); 
@@ -99,11 +132,10 @@ void RenderScene(InteractionUnit ctrlele, DE::CSphericTriangles &sphere)
         glPopMatrix();
     glPopMatrix();
 }
-
+// TODO Convernsion from GL_Texture to Pangolin::texture
 int main(int argc, char** argv){
     const std::string strDEMFileName = "data/dem_geotiff/alwdgg.tif";
-    const std::string strTEXFILEName = "data/texture/BlackMarble_2016_01deg_geo.tif";
-    static GLuint EARTHSURFACE;
+    const std::string strTEXFILEName = "data/texture/bio_2400.tiff";
     DE::CSphericTriangles SPHERE(strDEMFileName,strTEXFILEName);
     SPHERE.createIcosahedron();
     InteractionUnit CTRLELE;
@@ -171,12 +203,12 @@ int main(int argc, char** argv){
     unsigned int texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
-    // 为当前绑定的纹理对象设置环绕、过滤方式
+
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    // 加载并生成纹理
+
     int width = SPHERE.ptr_tex->tex.cols;
     int height = SPHERE.ptr_tex->tex.rows;
     // int nrChannels = 3;

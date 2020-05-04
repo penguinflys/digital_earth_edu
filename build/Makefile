@@ -204,33 +204,6 @@ src/Triface.cpp.s:
 	$(MAKE) -f CMakeFiles/MainFunc.dir/build.make CMakeFiles/MainFunc.dir/src/Triface.cpp.s
 .PHONY : src/Triface.cpp.s
 
-src/extra.o: src/extra.cpp.o
-
-.PHONY : src/extra.o
-
-# target to build an object file
-src/extra.cpp.o:
-	$(MAKE) -f CMakeFiles/MainFunc.dir/build.make CMakeFiles/MainFunc.dir/src/extra.cpp.o
-.PHONY : src/extra.cpp.o
-
-src/extra.i: src/extra.cpp.i
-
-.PHONY : src/extra.i
-
-# target to preprocess a source file
-src/extra.cpp.i:
-	$(MAKE) -f CMakeFiles/MainFunc.dir/build.make CMakeFiles/MainFunc.dir/src/extra.cpp.i
-.PHONY : src/extra.cpp.i
-
-src/extra.s: src/extra.cpp.s
-
-.PHONY : src/extra.s
-
-# target to generate assembly for a file
-src/extra.cpp.s:
-	$(MAKE) -f CMakeFiles/MainFunc.dir/build.make CMakeFiles/MainFunc.dir/src/extra.cpp.s
-.PHONY : src/extra.cpp.s
-
 src/gdal2cv.o: src/gdal2cv.cpp.o
 
 .PHONY : src/gdal2cv.o
@@ -330,9 +303,6 @@ help:
 	@echo "... src/Triface.o"
 	@echo "... src/Triface.i"
 	@echo "... src/Triface.s"
-	@echo "... src/extra.o"
-	@echo "... src/extra.i"
-	@echo "... src/extra.s"
 	@echo "... src/gdal2cv.o"
 	@echo "... src/gdal2cv.i"
 	@echo "... src/gdal2cv.s"

@@ -1,4 +1,7 @@
 # Digital Earth based on WMS Service developed on OpenGL
+
+Now is self-made WMS not availuable, just a local version.
+
 This is a Project to demostrate a Visualization of Digital Earth, with Request on Earth Visualization Image from Internet Server via WMS Service.
 
 The Code is heavily based on my Bachelor Thesis at CUMT.
@@ -9,6 +12,12 @@ data source:
 [DEM dataset](https://asterweb.jpl.nasa.gov/gdem.asp)<- not in use, 
 [DEM dataset](https://www.eea.europa.eu/data-and-maps/data/world-digital-elevation-model-etopo5)
 [Texture Dataset](https://visibleearth.nasa.gov/)
+
+## Dependencies:
+pangolin
+GDAL
+OpenCV
+
 ## TODO: 
 
 1. Apply google test. 
@@ -21,3 +30,12 @@ data source:
 ## Future Work
 * reduce CPU Usage.
 * pyrimid model()
+
+## Interesting Websites
+[NASA Visible Earth](https://visibleearth.nasa.gov)
+[Xglobal](http://www.radcyberzine.com/xglobe/index.html#maps)
+
+Convension Command:
+```
+gdal_translate -a_srs WGS84 -a_ullr -180 +90 +180 -90 xglobe-2400.jpg xglobe-2400.tiff
+```

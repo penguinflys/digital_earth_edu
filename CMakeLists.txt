@@ -26,7 +26,7 @@ find_package(OpenCV REQUIRED)
 set(HEADER_FILES src/includes/Triface.h src/includes/DataIO.h src/includes/ElevationAndTexture.h src/includes/gdal2cv.h src/includes/utils.h)
 set(SOURCES_FILES 
     src/main.cpp src/Triface.cpp src/DataIO.cpp src/ElevationAndTexture.cpp
-    utils/utils.cpp src/gdal2cv.cpp src/extra.cpp
+    utils/utils.cpp src/gdal2cv.cpp
     src/includes/Triface.h src/includes/DataIO.h src/includes/ElevationAndTexture.h
     src/includes/gdal2cv.h src/includes/utils.h
     )

@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/MainFunc.dir/src/ElevationAndTexture.cpp.o"
   "CMakeFiles/MainFunc.dir/utils/utils.cpp.o"
   "CMakeFiles/MainFunc.dir/src/gdal2cv.cpp.o"
-  "CMakeFiles/MainFunc.dir/src/extra.cpp.o"
   "MainFunc.pdb"
   "MainFunc"
 )
