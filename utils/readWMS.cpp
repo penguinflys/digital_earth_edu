@@ -10,14 +10,9 @@
 
 
 
-	typedef unsigned short DT_16U;
-	typedef  char   Byte;  
-	typedef  short   DT_16S;  
-
-	F
-
-
-
+typedef unsigned short DT_16U;
+typedef  char   Byte;  
+typedef  short   DT_16S;  
 
 using namespace std;
 int  nXSize;
@@ -30,7 +25,7 @@ void readWMS()
 	typedef  char   Byte;  
 	typedef  short   DT_16S;  
 
-    //×¢²áÎÄ¼þ¸ñÊ½
+    //×¢ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê½
     GDALAllRegister();
    
     const char* pszFile = "F:\\test2_8bit_2.tif";
@@ -39,11 +34,11 @@ void readWMS()
     poDataset = (GDALDataset*) GDALOpen( pszFile,GA_ReadOnly );
     if( poDataset == NULL )
     {
-        printf( "File: %s²»ÄÜ´ò¿ª£¡\n",pszFile);
+        printf( "File: %sï¿½ï¿½ï¿½Ü´ò¿ª£ï¿½\n",pszFile);
 		getchar();
         
     }
-	////ÅÐ¶ÏÐ´Èë¸ñÊ½ÊÇ·ñ¿ÉÓÃCreate()»òCreateCopy()
+	////ï¿½Ð¶ï¿½Ð´ï¿½ï¿½ï¿½Ê½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Create()ï¿½ï¿½CreateCopy()
 	//const char *pszFormat ="GTIFF";
 	//GDALDriver *poDriver;
 	//char **papszMetadata;
@@ -64,7 +59,7 @@ void readWMS()
 	//char ** papszMetadataLocation=NULL;
 
 
-	//³¢ÊÔÊ¹ÓÃCreateCopy()À´´´½¨ÐÂÎÄ¼þ
+	//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½CreateCopy()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 	//const char* psz_Write_File = "F:\\test_Write.tif";
 	//GDALDataset  *poDstDS;
 	//poDstDS= poDriver->CreateCopy(psz_Write_File,poDataset,FALSE,NULL,NULL,NULL);
@@ -75,22 +70,22 @@ void readWMS()
  //      GDALClose( (GDALDatasetH) poDstDS );
 	//}
 
- ////   Êä³öÍ¼ÏñµÄ¸ñÊ½ÐÅÏ¢
+ ////   ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½Ï¢
 
  //   printf( "Driver: %s/%s\n",
  //       poDataset->GetDriver()->GetDescription(),
  //       poDataset->GetDriver()->GetMetadataItem( GDAL_DMD_LONGNAME) );
  //
- //   //Êä³öÍ¼ÏñµÄ´óÐ¡ºÍ²¨¶Î¸öÊý
+ //   //ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ä´ï¿½Ð¡ï¿½Í²ï¿½ï¿½Î¸ï¿½ï¿½ï¿½
  //   printf( "Size is %dx%dx%d\n",
  //       poDataset->GetRasterXSize(),poDataset->GetRasterYSize(),
  //       poDataset->GetRasterCount());
  //int a=poDataset->GetRasterCount();
- //   //Êä³öÍ¼ÏñµÄÍ¶Ó°ÐÅÏ¢
+ //   //ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½Í¶Ó°ï¿½ï¿½Ï¢
  //   if( poDataset->GetProjectionRef() != NULL )
  //       printf( "Projection is '%s'\n", poDataset->GetProjectionRef() );
  
-    //Êä³öÍ¼ÏñµÄ×ø±êºÍ·Ö±æÂÊÐÅÏ¢
+    //ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
    double padfGeoTransform[6];
    poDataset->GetGeoTransform(padfGeoTransform);
     //if( poDataset->GetGeoTransform( padfGeoTransform) == CE_None )
@@ -107,12 +102,12 @@ void readWMS()
     //int            bGotMin, bGotMax;
     //double     adfMinMax[2];
  
-    //¶ÁÈ¡µÚÒ»¸ö²¨¶Î
+    //ï¿½ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     poBand = poDataset->GetRasterBand( 1 );
-    //ÉèÖÃdatatype
+    //ï¿½ï¿½ï¿½ï¿½datatype
 	GDALDataType dataType =poBand->GetRasterDataType();
  
-    //»ñÈ¡Í¼ÏñµÄ¿é´óÐ¡²¢Êä³ö
+    //ï¿½ï¿½È¡Í¼ï¿½ï¿½Ä¿ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½
     //poBand->GetBlockSize(&nBlockXSize, &nBlockYSize );
     //printf( "Block=%dx%d, Type=%s, ColorInterp=%s\n",
     //    nBlockXSize, nBlockYSize,
@@ -120,7 +115,7 @@ void readWMS()
     //    GDALGetColorInterpretationName(
     //    poBand->GetColorInterpretation()));
  
-    //»ñÈ¡¸Ã²¨¶ÎµÄ×î´óÖµ×îÐ¡Öµ£¬Èç¹û»ñÈ¡Ê§°Ü£¬Ôò½øÐÐÍ³¼Æ
+    //ï¿½ï¿½È¡ï¿½Ã²ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ð¡Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½
     //adfMinMax[0] = poBand->GetMinimum( &bGotMin);
     //adfMinMax[1] = poBand->GetMaximum( &bGotMax);
  
@@ -129,11 +124,11 @@ void readWMS()
  
     //printf( "Min=%.3f,Max=%.3f\n", adfMinMax[0], adfMinMax[1] );
  
-    //Êä³öÍ¼ÏñµÄ½ð×ÖËþÐÅÏ¢
+    //ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     //if( poBand->GetOverviewCount() > 0 )
     //    printf( "Band has %d overviews.\n", poBand->GetOverviewCount() );
  
-    //Êä³öÍ¼ÏñµÄÑÕÉ«±íÐÅÏ¢
+    //ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½Ï¢
     //if( poBand->GetColorTable() != NULL)
     //    printf( "Band has a color table with %d entries.\n",
     //    poBand->GetColorTable()->GetColorEntryCount() );
@@ -147,7 +142,7 @@ void readWMS()
 
 
    
-    //¶ÁÈ¡Í¼ÏñµÄµÚÒ»ÐÐÊý¾Ý
+    //ï¿½ï¿½È¡Í¼ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   //  pafScanline = (DT_16S*) CPLMalloc(sizeof(DT_16S)*nXSize*nYSize);
 
 	for(int i=0;i<nXSize*nYSize;i++)
@@ -181,7 +176,7 @@ void readWMS()
 
 		 data[i]=new Byte [nXSize];
 	}
-	//cout<<"Êä³öÔªÊý¾Ý×édata£º"<<endl;
+	//cout<<"ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½dataï¿½ï¿½"<<endl;
 	//FILE *fp=fopen("F:\\test.txt","w");
 	for(long i=0;i<nYSize;i++)
 	{
@@ -198,7 +193,7 @@ void readWMS()
 	}
 	cout<<endl;
 	 
-	//·ÂÉä±ä»»ÇóµØÀí×ø±ê
+	//ï¿½ï¿½ï¿½ï¿½ä»»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	//printf("%.6f\t%.6f\t%.6f\t%.6f\t%.6\t%.6f\t%.6f\t",padfGeoTransform[0],padfGeoTransform[1],padfGeoTransform[2],padfGeoTransform[3],padfGeoTransform[4],padfGeoTransform[5]);
 
 	
@@ -216,7 +211,7 @@ void readWMS()
 
 	//}
 
-	//ÊÍ·ÅÄÚ´æ
+	//ï¿½Í·ï¿½ï¿½Ú´ï¿½
 
 
 
@@ -226,7 +221,7 @@ void readWMS()
  
     CPLFree(pafScanline);
     
-    //¹Ø±ÕÎÄ¼þ
+    //ï¿½Ø±ï¿½ï¿½Ä¼ï¿½
     GDALClose((GDALDatasetH)poDataset);
 
 
